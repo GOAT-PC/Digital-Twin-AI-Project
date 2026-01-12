@@ -7,11 +7,11 @@
 ## 项目结构
 
 ```
-final_project/
+project/
 ├── algorithm/            # 核心算法部分，包含数据驱动模型
 │   ├── 单制冷/           # 单制冷模式下的AI算法和数据
 │   ├── 单制热/           # 单制热模式下的AI算法和数据
-│   └── 混合制热/         # 混合制热模式下的AI算法和数据 (可能包含PINN模型)
+│   └── 混合制热/         # 混合制热模式下的AI算法和数据
 ├── visualization/        # 前端可视化界面，用于展示数字孪生数据
 │   ├── front/            # 前端代码 (HTML, CSS, JS)
 │   ├── sample_data.csv   # 示例数据文件
@@ -32,7 +32,7 @@ final_project/
 - **`test_case/`**: 测试数据，格式为 `.h5`。
 - **`utils/`**: 包含模型 (`model.py`, `network.py`) 和数据生成 (`generate_dataset.ipynb`)、模型训练 (`train_model.py`) 相关的Python脚本。
 
-**技术栈**: Python, PyTorch (推测), Jupyter Notebook, HDF5 (h5py)
+**技术栈**: Python, PyTorch , Jupyter Notebook, HDF5 
 
 ### 单制热 (`algorithm/单制热/`)
 
@@ -40,15 +40,15 @@ final_project/
 - **`data/`**: 训练和测试数据，格式为 `.npy` 和 `.xlsx`。
 - **`model/`**: 训练好的模型 (`best_model.pt`)。
 
-**技术栈**: Python, PyTorch (推测), Jupyter Notebook, NumPy, Pandas
+**技术栈**: Python, PyTorch , Jupyter Notebook, NumPy, Pandas
 
 ### 混合制热 (`algorithm/混合制热/`)
 
-- **`code/`**: 包含 Jupyter Notebook (`hybrid_heating_pinn_v2.ipynb`)，可能实现了基于物理信息神经网络 (PINN) 的混合制热模型。
+- **`code/`**: 包含 Jupyter Notebook (`hybrid_heating_pinn_v2.ipynb`)，实现了基于物理信息神经网络 (PINN) 的混合制热模型。
 - **`data/`**: 训练和测试数据，格式为 `.npy` 和 `.xlsx`。
 - **`model/`**: 训练好的模型 (`best_balanced_hybrid_pinn_v2.pt`)。
 
-**技术栈**: Python, PyTorch (推测), Jupyter Notebook, NumPy, Pandas, PINN (推测)
+**技术栈**: Python, PyTorch (推测), Jupyter Notebook, NumPy, Pandas, PINN
 
 ## 可视化部分 (`visualization/`)
 
@@ -58,7 +58,7 @@ final_project/
 - **`sample_data.csv`**, **`sample_list_data.csv`**: 示例数据文件，用于前端展示。
 - **`server.exe`**: 一个 Windows 可执行文件，推测是用于启动本地服务器或提供数据接口。
 
-**技术栈**: HTML, CSS, JavaScript (可能使用了特定的前端库或框架), CSV, Windows Executable
+**技术栈**: HTML, CSS, JavaScript, CSV, Windows Executable
 
 ## 环境配置与运行
 
@@ -113,5 +113,5 @@ final_project/
 
 ---
 
-**作者**: Manus AI
+**作者**: Peng
 **日期**: 2026年1月12日
