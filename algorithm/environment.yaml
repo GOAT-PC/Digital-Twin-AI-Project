@@ -1,0 +1,18 @@
+
+name: pinn
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  # PyTorch (CUDA 11.8) - keep these in conda only
+  - pytorch=2.1.2
+  - torchvision=0.16.2
+  - torchaudio=2.1.2
+  - pytorch-cuda=11.8
+
+  # nice-to-have (conda side)
+  - pip
+  - ipykernel

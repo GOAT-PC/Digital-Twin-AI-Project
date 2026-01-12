@@ -1,0 +1,7 @@
+torch
+numpy
+matplotlib
+h5py
+pandas
+openpyxl
+jupyterlab
